@@ -4,12 +4,12 @@ using UnityEngine;
 using Pathfinding;
 
 public class enemGFX : MonoBehaviour{
-    public AIPath aiPath;
+    AIPath aiPath;
     Vector3 Flip;
     float FlipX;
     // Start is called before the first frame update
     void Start(){
-
+        aiPath = GetComponent<AIPath>();
         Flip = transform.localScale;
         FlipX = Flip.x;
     }
